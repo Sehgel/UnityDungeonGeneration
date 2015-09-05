@@ -93,9 +93,9 @@ public class LevelGenerator : MonoBehaviour {
         Vector2 randomDirection = _currentPosition;
         //Up?
         if (Random.Range(0, 2) > 0)
-            randomDirection.y += (Random.Range(0, 100) > 45) ? 1 : -1 ;
+            randomDirection.y += (Random.Range(0, 2) > 0) ? 1 : -1 ;
         else//Then Down
-            randomDirection.x += (Random.Range(0, 100) > 35) ? 1 : -1 ;
+            randomDirection.x += (Random.Range(0, 2) > 0) ? 1 : -1 ;
 
         return randomDirection ;
     }
