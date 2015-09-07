@@ -82,6 +82,7 @@ public class LevelGenerator : MonoBehaviour {
             }
         }
     }
+    //Item Generation is not fully working
     private void GenerateItems()
     {
         for (int i = 0; i < map.Length; i++)
@@ -170,7 +171,6 @@ public class LevelGenerator : MonoBehaviour {
             randomDirection.y += (Random.Range(0, 2) > 0) ? 1 : -1 ;//Positive? then negative
         else//Then Horizontal
             randomDirection.x += (Random.Range(0, 2) > 0) ? 1 : -1;//Positive? then negative
-
         return randomDirection ;
     }
     private bool IsPositionTaken(Vector2 _position)
